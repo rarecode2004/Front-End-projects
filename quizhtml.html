@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz</title>
+    <link rel="stylesheet" type="text/css" href="quizcss.css">
+</head>
+<body>
+    <h2>SIMPLE QUIZ</h2><br>
+
+    <div class="box">
+        <h3>RULES:</h3>
+        1. Answer the Questions.<br>
+        2. Submit the quiz before leaving this page.<br>
+        3. Your Score will be displayed after evaluating.
+    </div>
+
+    <div class="container">
+        Q1. What is the total of 100 + 90?<hr><br><br>
+        <input type="radio" name="question1" id="c1">190<br>
+        <input type="radio" name="question1">400<br>
+        <input type="radio" name="question1">150<br>
+        <input type="radio" name="question1">90<br><br>
+        <button type="button" class="next" onclick="next(1)">NEXT</button>
+    </div>
+
+    <div class="container">
+        Q2. What is 100 + 300?<hr><br><br>
+        <input type="radio" name="question2">300<br>
+        <input type="radio" name="question2">40<br>
+        <input type="radio" name="question2" id="c2">400<br>
+        <input type="radio" name="question2">600<br>
+        <button type="button" class="next" onclick="next(2)">NEXT</button>
+    </div>
+
+    <div class="container">
+        Q3. What is 100 + 0?<hr><br><br>
+        <input type="radio" name="question3">300<br>
+        <input type="radio" name="question3">400<br>
+        <input type="radio" name="question3">150<br>
+        <input type="radio" name="question3" id="c3">100<br>
+        <button type="button" class="next" onclick="submit()">SUBMIT</button>
+    </div>
+
+    <p id="ans"></p>
+
+    <script src="quizscript.js"></script>
+</body>
+</html>

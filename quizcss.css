@@ -1,0 +1,95 @@
+body {
+    background: url('quizbg.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.box {
+    background-color: rgba(255, 192, 203, 0.8); /* Pink with opacity */
+    width: 80%;
+    max-width: 500px;
+    padding: 20px;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.container {
+    width: 80%;
+    max-width: 500px;
+    margin-top: 20px;
+    border: 5px solid deeppink;
+    padding: 20px;
+    background: rgba(255, 223, 86, 0.8); /* Goldenrod with opacity */
+    display: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.next {
+    background-color: lavender;
+    border-radius: 9px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+    font-size: 16px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+#ans {
+    border: 3px solid green;
+    padding: 10px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .box, .container, #ans {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .next {
+        margin-left: 0;
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+    .box, .container, #ans {
+        width: 90%;
+    }
+
+    .next {
+        margin-left: 70%;
+    }
+}
